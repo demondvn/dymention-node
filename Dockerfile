@@ -30,4 +30,4 @@ RUN dymd init "$MONIKER_NAME" --chain-id "$CHAIN_ID" && \
 EXPOSE 26656 26657
 RUN dymd version
 # Start the Dymension node
-CMD ["dymd"]
+ENTRYPOINT ["dymd"]
