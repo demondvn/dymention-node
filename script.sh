@@ -1,9 +1,9 @@
 #!/bin/bash
 dymd version # v0.2.0-beta
-
+NODE_MONIKER = ${NODE_MONIKER:-"MonNode"}
 dymd config keyring-backend test
 dymd config chain-id 35-c
-dymd init "$NODE_MONIKER" --chain-id 35-c
+dymd init "${NODE_MONIKER}" --chain-id 35-c
 curl -L https://raw.githubusercontent.com/dymensionxyz/testnets/main/dymension-hub/35-C/genesis.json > $HOME/.dymension/config/genesis.json
 curl -s https://snapshots-testnet.nodejumper.io/dymension-testnet/addrbook.json > $HOME/.dymension/config/addrbook.json
 
