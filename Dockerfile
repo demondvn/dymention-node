@@ -17,7 +17,7 @@ RUN cd dymension &&   make install
 # Set the environment variables
 ENV CHAIN_ID=local-testnet \
     KEY_NAME=local-user \
-    MONIKER_NAME=local
+    MONIKER_NAME=
 
 # Initialize the local testnet
 RUN dymd init "$MONIKER_NAME" --chain-id "$CHAIN_ID" && \
