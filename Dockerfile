@@ -32,4 +32,4 @@ EXPOSE 26656 26657
 COPY script.sh script.sh
 RUN chmod +x script.sh
 # Start the Dymension node
-ENTRYPOINT ["./script.sh"]
+CMD ["./script.sh"]
