@@ -28,6 +28,6 @@ RUN dymd init "$MONIKER_NAME" --chain-id "$CHAIN_ID" && \
 
 # Expose the necessary ports
 EXPOSE 26656 26657
-
+RUN dymd version
 # Start the Dymension node
-CMD ["dymd", "start"]
+CMD ["dymd"]
