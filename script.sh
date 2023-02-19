@@ -1,6 +1,7 @@
 #!/bin/bash
 dymd version # v0.2.0-beta
-NODE_MONIKER = ${NODE_MONIKER:-"MonNode"}
+
+NODE_MONIKER="${NODE_MONIKER:-MonPham}"
 dymd config keyring-backend test
 dymd config chain-id 35-c
 dymd init "${NODE_MONIKER}" --chain-id 35-c
